@@ -1,0 +1,15 @@
+<section>
+    <h2>Novo Livro</h2>
+    <form (ngSubmit)="incluir()">
+        <label>Título</label>
+        <input [(ngModel)]="livro.titulo" name="titulo">
+
+        <label>Autor</label>
+        <input [(ngModel)]="livro.autor" name="autor">
+
+        <label>Ano</label>
+        <input type="number" [(ngModel)]="livro.ano" name="ano">
+
+        <button type="submit">Salvar</button>
+    </form>
+</section>

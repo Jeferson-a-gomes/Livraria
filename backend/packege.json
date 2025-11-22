@@ -1,0 +1,14 @@
+{
+    "name": "livraria-api",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "bin/www",
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "mongoose": "^7.0.0",
+        "cors": "^2.8.5"
+    }
+}

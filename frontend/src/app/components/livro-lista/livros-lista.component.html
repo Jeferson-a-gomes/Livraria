@@ -1,0 +1,21 @@
+<section>
+    <h2>Lista de Livros</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Ano</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let livro of livros">
+                <td>{{ livro.titulo }}</td>
+                <td>{{ livro.autor }}</td>
+                <td>{{ livro.ano }}</td>
+                <td><button (click)="excluir(livro.codigo)">Excluir</button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
